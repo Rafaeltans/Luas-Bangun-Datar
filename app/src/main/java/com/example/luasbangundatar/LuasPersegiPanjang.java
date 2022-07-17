@@ -43,8 +43,8 @@ public class LuasPersegiPanjang extends AppCompatActivity {
         btnHitung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String strpanjang = String.valueOf(etPanjang);
-                String strlebar = String.valueOf(etLebar);
+                String strpanjang = String.valueOf(etPanjang.getText());
+                String strlebar = String.valueOf(etLebar.getText());
 
                 if(TextUtils.isEmpty(strpanjang)||TextUtils.isEmpty(strlebar)){
                     Toast.makeText(LuasPersegiPanjang.this,"Panjang dan Lebar Harus Di Isi",Toast.LENGTH_SHORT).show();
