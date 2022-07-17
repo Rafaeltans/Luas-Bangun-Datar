@@ -16,14 +16,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        cvSegitiga.findViewById(R.id.cv_segitiga);
-        cvPersegi.findViewById(R.id.cv_persegi);
-        cvPersegiPanjang.findViewById(R.id.cv_persegiPanjang);
-        cvLayangLayang.findViewById(R.id.cv_layang_layang);
-        cvLingkaran.findViewById(R.id.cv_lingkaran);
-        cvJajarGenjang.findViewById(R.id.cv_jajar_genjang);
-        cvBelahKetupat.findViewById(R.id.cv_belah_ketupat);
-        cvTrapesium.findViewById(R.id.cv_trapesium);
+        cvSegitiga=findViewById(R.id.cv_segitiga);
+        cvPersegi=findViewById(R.id.cv_persegi);
+        cvPersegiPanjang=findViewById(R.id.cv_persegiPanjang);
+        cvLayangLayang=findViewById(R.id.cv_layang_layang);
+        cvLingkaran=findViewById(R.id.cv_lingkaran);
+        cvJajarGenjang=findViewById(R.id.cv_jajar_genjang);
+        cvBelahKetupat=findViewById(R.id.cv_belah_ketupat);
+        cvTrapesium=findViewById(R.id.cv_trapesium);
 
         cvSegitiga.setOnClickListener(new View.OnClickListener() {
             @Override
