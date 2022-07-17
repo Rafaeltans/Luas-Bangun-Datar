@@ -25,6 +25,10 @@ public class LuasPersegi extends AppCompatActivity {
         setContentView(R.layout.activity_luas_persegi);
 
         ivBack = findViewById(R.id.iv_back);
+        etSisi = findViewById(R.id.et_sisi);
+        tvHasil = findViewById(R.id.tv_hasil);
+        btnHitung = findViewById(R.id.btn_hitung);
+
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,14 +38,10 @@ public class LuasPersegi extends AppCompatActivity {
             }
         });
 
-        etSisi = findViewById(R.id.et_sisi);
-        tvHasil = findViewById(R.id.tv_hasil);
-
-        btnHitung = findViewById(R.id.btn_hitung);
         btnHitung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String strSisi = String.valueOf(etSisi);
+                String strSisi = String.valueOf(etSisi.getText());
 
                 if (TextUtils.isEmpty(strSisi)) {
                     Toast.makeText(LuasPersegi.this, "Sisi Harus Di Isi", Toast.LENGTH_SHORT).show();
