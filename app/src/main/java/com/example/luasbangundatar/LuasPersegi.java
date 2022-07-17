@@ -43,13 +43,12 @@ public class LuasPersegi extends AppCompatActivity {
             public void onClick(View view) {
                 String strSisi = String.valueOf(etSisi);
 
-                if(TextUtils.isEmpty(strSisi)){
-                    Toast.makeText(LuasPersegi.this,"Sisi Harus Di Isi",Toast.LENGTH_SHORT).show();
-                }
-                else {
+                if (TextUtils.isEmpty(strSisi)) {
+                    Toast.makeText(LuasPersegi.this, "Sisi Harus Di Isi", Toast.LENGTH_SHORT).show();
+                } else {
                     Float sisi = Float.parseFloat(strSisi);
 
-                    Float luas = sisi*sisi;
+                    Float luas = sisi * sisi;
 
                     tvHasil.setText(String.format("%.2f", luas));
                 }
