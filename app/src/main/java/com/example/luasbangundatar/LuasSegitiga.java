@@ -38,7 +38,7 @@ public class LuasSegitiga extends AppCompatActivity {
                 String strtinggi = String.valueOf(etTinggi.getText());
 
                 if(TextUtils.isEmpty(stralas)||TextUtils.isEmpty(strtinggi)){
-                    Toast.makeText(LuasSegitiga.this,"Alas dan Tinggi Harus di Isi",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LuasSegitiga.this,"Alas dan Tinggi Harus Di Isi",Toast.LENGTH_SHORT).show();
                 }else {
                     Float alas = Float.parseFloat(stralas);
                     Float tinggi = Float.parseFloat(strtinggi);
