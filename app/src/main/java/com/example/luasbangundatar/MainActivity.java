@@ -61,6 +61,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        cvLingkaran.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LuasLingkaran.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         cvJajarGenjang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
