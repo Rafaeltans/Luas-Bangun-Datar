@@ -14,7 +14,6 @@ import android.widget.Toast;
 
 public class LuasLayangLayang extends AppCompatActivity {
 
-    private ImageView ivBack;
     private EditText etDiagonal1, etDiagonal2;
     private Button btnHitung, btnReset;
     private TextView tvHasil;
@@ -24,21 +23,14 @@ public class LuasLayangLayang extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_luas_layang_layang);
 
-        ivBack = findViewById(R.id.iv_back);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         etDiagonal1 = findViewById(R.id.et_diagonal1);
         etDiagonal2 = findViewById(R.id.et_diagonal2);
         btnHitung = findViewById(R.id.btn_hitung);
         btnReset = findViewById(R.id.btn_reset);
         tvHasil = findViewById(R.id.tv_hasil);
-
-        ivBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LuasLayangLayang.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         btnHitung.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,4 +60,16 @@ public class LuasLayangLayang extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
 }
