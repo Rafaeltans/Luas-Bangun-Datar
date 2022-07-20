@@ -17,19 +17,20 @@ public class LuasSegitiga extends AppCompatActivity {
     private EditText etAlas, etTinggi;
     private Button btnHitung, btnReset;
     private TextView tvHasil;
-    private ImageView ivBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_luas_segitiga);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         etAlas = findViewById(R.id.et_alas);
         etTinggi = findViewById(R.id.et_tinggi);
         btnHitung = findViewById(R.id.btn_hitung);
         tvHasil = findViewById(R.id.tv_hasil);
         btnReset = findViewById(R.id.btn_reset);
-        ivBack = findViewById(R.id.iv_back);
 
         btnHitung.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,14 +60,17 @@ public class LuasSegitiga extends AppCompatActivity {
             }
         });
 
-        ivBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LuasSegitiga.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
 }

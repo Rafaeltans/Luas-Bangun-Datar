@@ -14,7 +14,6 @@ import android.widget.Toast;
 
 public class LuasLingkaran extends AppCompatActivity {
 
-    private ImageView ivBack;
     private EditText etJari;
     private Button btnHitung, btnReset;
     private TextView tvHasil;
@@ -24,20 +23,13 @@ public class LuasLingkaran extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_luas_lingkaran);
 
-        ivBack = findViewById(R.id.iv_back);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         etJari = findViewById(R.id.et_jari);
         btnHitung = findViewById(R.id.btn_hitung);
         btnReset = findViewById(R.id.btn_reset);
         tvHasil = findViewById(R.id.tv_hasil);
-
-        ivBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LuasLingkaran.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         btnHitung.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,4 +59,16 @@ public class LuasLingkaran extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
 }
