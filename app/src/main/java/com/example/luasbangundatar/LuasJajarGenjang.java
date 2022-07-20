@@ -14,7 +14,6 @@ import android.widget.Toast;
 
 public class LuasJajarGenjang extends AppCompatActivity {
 
-    private ImageView ivBack;
     private EditText etAlas, etTinggi;
     private Button btnHitung, btnReset;
     private TextView tvHasil;
@@ -24,21 +23,14 @@ public class LuasJajarGenjang extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_luas_jajar_genjang);
 
-        ivBack = findViewById(R.id.iv_back);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         etAlas = findViewById(R.id.et_alas);
         etTinggi = findViewById(R.id.et_tinggi);
         btnHitung = findViewById(R.id.btn_hitung);
         btnReset = findViewById(R.id.btn_reset);
         tvHasil = findViewById(R.id.tv_hasil);
-
-        ivBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LuasJajarGenjang.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         btnHitung.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,4 +60,16 @@ public class LuasJajarGenjang extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
 }
