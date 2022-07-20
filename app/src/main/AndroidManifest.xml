@@ -16,39 +16,56 @@
         <activity
             android:name=".LuasTrapesium"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:label="Luas Trapesium"
+            android:theme="@style/Theme.LuasBangunDatar"/>
         <activity
             android:name=".LuasBelahKetupat"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:label="Belah Ketupat"
+            android:theme="@style/Theme.LuasBangunDatar"/>
         <activity
             android:name=".LuasJajarGenjang"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:label="Luas Jajar Genjang"
+            android:theme="@style/Theme.LuasBangunDatar"/>
         <activity
             android:name=".LuasLingkaran"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:label="Luas Lingkaran"
+            android:theme="@style/Theme.LuasBangunDatar"/>
         <activity
             android:name=".LuasLayangLayang"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:label="Luas Layang - Layang"
+            android:theme="@style/Theme.LuasBangunDatar"/>
         <activity
             android:name=".LuasPersegiPanjang"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:label="Luas Persegi Panjang"
+            android:theme="@style/Theme.LuasBangunDatar"/>
         <activity
             android:name=".LuasPersegi"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:label="Luas Persegi"
+            android:theme="@style/Theme.LuasBangunDatar"/>
         <activity
             android:name=".LuasSegitiga"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:label="Luas Segitiga"
+            android:theme="@style/Theme.LuasBangunDatar"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LuasBangunDatar.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
