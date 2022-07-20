@@ -12,31 +12,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/iv_back"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="-25dp"
-            android:src="@drawable/back" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
-            android:gravity="center"
-            android:text="Luas Jajar Genjang"
-            android:textColor="#222831"
-            android:textSize="20sp"
-            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:layout_marginTop="40dp"
             android:src="@drawable/jajargenjang1" />
 
         <TextView
