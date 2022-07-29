@@ -1,5 +1,5 @@
 # Luas-Bangun-Datar(Android)
-# Tools yang dipakai Android Studio
+Tools yang dipakai Android Studio
 
 1. Segitiga
 2. Persegi
