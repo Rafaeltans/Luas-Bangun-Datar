@@ -1,4 +1,4 @@
-# Luas-Bangun-Datar
+# Luas-Bangun-Datar(Android)
 1. Segitiga
 2. Persegi
 3. Persegi Panjang
